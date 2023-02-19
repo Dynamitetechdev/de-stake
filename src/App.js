@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./pages/header";
+import { MoralisProvider } from "react-moralis";
+import StakeContractFunctions from "./pages/stakeContractFunctions";
+import { NotificationProvider } from "web3uikit";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MoralisProvider initializeOnMount={false}>
+        <NotificationProvider>
+          <Header />
+          <StakeContractFunctions />
+        </NotificationProvider>
+      </MoralisProvider>
     </div>
   );
 }

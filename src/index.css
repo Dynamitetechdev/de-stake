@@ -11,3 +11,91 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2em;
+}
+.staking-dashboard{
+  padding: 0 2em;
+}
+.contract_bal{
+  text-align: center;
+  background-color: rgb(18, 18, 141);
+  color: #ffffff;
+  padding: 1em 0;
+  border-radius: 15px;
+}
+.contract_bal h1 span{
+  margin: 0 7px;
+  color: yellow;
+}
+
+.minimum_stake p{
+  text-align: center;
+  margin: 20px auto;
+  font-weight: bolder;
+  background-color: red;
+  width: 300px;
+  padding: 20px 0;
+  border-radius: 15px;
+  color: #ffffff;
+}
+
+.wrapper{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+.staker_activity{
+  background-color: rgb(18, 18, 141);
+  padding: 20px 4em;
+  border-radius: 15px;
+  color: #ffffff;
+    /* margin-bottom: 2em; */
+}
+.margin{
+  margin-bottom: 2em;
+}
+.left .staker_activity span{
+    margin: 0 7px;
+  color: yellow;
+}
+.left .staker_activity button{
+  background-color: rgb(238, 238, 231);
+  padding: 18px 45px;
+  font-size: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  margin: 1em 0;
+  cursor: pointer;
+}
+
+.right{
+  background-color: rgb(207, 13, 13);
+    padding: 20px 4em;
+    border-radius: 15px;
+    color: #ffffff;
+}
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul li{
+  margin: 10px 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.no_adddress_found{
+    text-align: center;
+      background-color: rgb(18, 18, 141);
+      color: #ffffff;
+      padding: 1.5em 0;
+      border-radius: 15px;
+}
